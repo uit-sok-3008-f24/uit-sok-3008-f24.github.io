@@ -5,11 +5,9 @@
 The lecture and seminar plan contain information about the timing, topics, course instructor, as well as resources/tasks for each topic.
 
 - [Lecture and Seminar Plan](forelesningsplan.md){:target="blank"}
-- [Seminarplan](seminarplan.html){:target="blank"}
-- [Innleveringsplan](innleveringer.html){:target="blank"}   
 
 
-[Timetable](https://timeplan.uit.no/){:target="blank"} på timeplan.uit.no
+[Timetable](https://timeplan.uit.no/emne_timeplan.php?sem=24h&fag=&module[]=SOK-3008-1#week-24){:target="blank"} on timeplan.uit.no
 
 
 ## Course Description
@@ -40,8 +38,6 @@ In this course, you will write two obligatory term papers on given topics on mar
 
 ## Administrative Questions
 For administrative inquiries, please send an email to: [hhcampus@hjelp.uit.no](mailto:hhcampus@hjelp.uit.no){:target="blank"}. There, you will receive help from the School of Business Administration.
-
-## [Slik lager du et kursrepositorie](readme_no.html){:target="blank"} (Slettes)
 
 
 
