@@ -33,7 +33,7 @@ Curriculum: Chapter 10, 11, 15 and 16.
 ## Announcements
 Announcements and messages are posted in [Canvas](https://uit.instructure.com/courses/35407){:target="blank"}.
 
-Obligatory Assignments (Examination) and Submission
+## Obligatory Assignments (Examination) and Submission
 In this course, you will write two obligatory term papers on given topics on market analysis, and give a project presentation. Your final grade is determined based on these two term papers (this implies that there is no final exam for this course). You can write the term papers alone or together with one other person. The term papers is to be submitted through Wiseflow on a given deadline date.
 
 ## Administrative Questions
