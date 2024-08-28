@@ -9,6 +9,7 @@
 |2|27/08|Continue to review Consumer Theory|
 |3|29/08|Finsh review of Consumer Theory|
 ||  |Work on R code to estimate linear models, especially SUR|
+||  |[R code on SUR](https://uit.instructure.com/courses/35407/files?preview=3158104))|
 ||  |Look at the material on Canvas File on [SUR](https://uit.instructure.com/courses/35407/files?preview=3158104)|
 |4|04/09||
 |4|12/09||
