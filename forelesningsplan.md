@@ -9,11 +9,14 @@
 |2|27/08|Continue to review Consumer Theory|
 |3|29/08|Finsh review of Consumer Theory|
 ||  |Work on R code to estimate linear models, especially SUR|
-||  |[R code on SUR](https://uit.instructure.com/courses/35407/files?preview=3158104))|
-||  |Look at the material on Canvas File on [SUR](https://uit.instructure.com/courses/35407/files?preview=3158104)|
+||  |Look at the material on Canvas File on [SUR](https://uit.instructure.com/courses/35407/files?preview=3158104), Here is the [R code on SUR](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/SUR.R)|
+||  |You can also look at Chapters 10 and 11 from [Principles of Econometrics](https://principlesofeconometrics.com/poe5/poe5.html) yourself.  Here are the R codes: [Chapter 10](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Ch_10.R), and  [Chapter 11](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Ch_11.R)|
 |4|04/09||
 |4|12/09||
 |4|13/09||
+|4|19/09||
+|4|25/09||
+|4|26/09||
 
    
 
