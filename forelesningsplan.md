@@ -12,7 +12,9 @@
 ||  |Look at the material on Canvas File on [SUR](https://uit.instructure.com/courses/35407/files?preview=3158104), Here is the [R code on SUR](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/SUR.R)|
 ||  |You can also look at Chapters 10 and 11 from [Principles of Econometrics](https://principlesofeconometrics.com/poe5/poe5.html) yourself.  Here are the R codes: [Chapter 10](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Ch_10.R), and  [Chapter 11](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Ch_11.R)|
 |||[Homework: General Theoretical Restrictions](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/homework_sok_3008.pdf)|
-|4|04/09||
+|4|04/09|We finalize what we started earlier|
+|||Then we will start: Rotterdam model:- Properties, derivation, elasticity formulas, restrictions|
+|||Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student%20.R)|
 |4|12/09||
 |4|13/09||
 |4|19/09||
