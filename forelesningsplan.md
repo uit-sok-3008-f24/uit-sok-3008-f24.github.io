@@ -15,11 +15,12 @@
 |4|04/09|We finalize what we started earlier|
 |||Then we will start: Rotterdam model:- Properties, derivation, elasticity formulas, restrictions|
 |||Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student%20.R)|
-|4|12/09||
-|4|13/09||
-|4|19/09||
-|4|25/09||
-|4|26/09||
+|5|12/09||
+|6|13/09||
+|7|19/09||
+|8|25/09||
+|9|26/09||
+|Deadline (16:00)|26/09|[Where to get data for term paper 1](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Where%20to%20get%20data%20for%20term%20papers%20%20(1).pdf).<br/>                                 Deadline (16:00) for hand-in of proposal for first term-paper with theme/data & name (and group members)|
 
    
 
