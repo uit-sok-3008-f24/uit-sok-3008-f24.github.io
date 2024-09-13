@@ -14,8 +14,8 @@
 |||[Homework: General Theoretical Restrictions](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/homework_sok_3008.pdf)|
 |4|04/09|We finalize what we started earlier|
 |||Then we will start: Rotterdam model:- Properties, derivation, elasticity formulas, restrictions <br/> [PPT on Rotterdam model](https://uit.instructure.com/courses/35407/files?preview=3175049) |
-|5|11/09|Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student_session_1.R)|
-|6|13/09||
+|5|11/09|Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student_session_1.R) <br/> |
+|6|13/09|[Complete R codes for Rotterdam Model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_complete.R)|
 |7|19/09||
 |8|25/09||
 |9|26/09||
