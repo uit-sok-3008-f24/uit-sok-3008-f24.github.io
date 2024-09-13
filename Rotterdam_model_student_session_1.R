@@ -240,28 +240,17 @@ qchisq(0.95,22)
 #' monthly H0's (think about the substitution matrix):
 
 # Test homogeneity H0: The equations are homogeneous
-reshom <- c("eq1_dlnp1+eq1_dlnp2+eq1_dlnp3=0",
-            "eq2_dlnp1+eq2_dlnp2+eq2_dlnp3=0" )
 
-linearHypothesis(Rot12,
-                 reshom, 
-                 test="Chisq")
+
+
 
 # symmetry: H0: The equations are symmetric
-ressym <- c("eq1_dlnp2-eq2_dlnp1 =0")
 
-linearHypothesis(Rot12,
-                 ressym, 
-                 test="Chisq")
+
+
 
 #Homo and sym: H0: the equations are homogeneous AND symmetric:
-reshomsym <- c("eq1_dlnp1+eq1_dlnp2+eq1_dlnp3=0",
-            "eq2_dlnp1+eq2_dlnp2+eq2_dlnp3=0",
-            "eq1_dlnp2-eq2_dlnp1 =0")
 
-linearHypothesis(Rot12,
-                 reshomsym, 
-                 test="Chisq")
 
 
 #' We can now define models with either 
@@ -269,31 +258,16 @@ linearHypothesis(Rot12,
 
 
 #Rotterdam model with both homogeneity and symmetry 
-Rot12hs <- systemfit(system12, 
-                     data = mydata,
-                     method = "SUR",
-                     restrict.matrix = reshomsym)
 
-summary(Rot12hs)
+
+
 
 
 #' We will now estimate our elasticities. 
 #' We continue with the fully restricted model, Rot12hs.
 #' First we need to extract the coefficients from our model:
 
-coef(summary(Rot12hs))
-coeff<- round(coef(summary(Rot12hs)), digits = 3)
-coeff
-
-relCoeffs <- c("eq1_dlnp1", "eq1_dlnp2", "eq1_dlnp3", "eq1_dlnEXP",
-               "eq2_dlnp1", "eq2_dlnp2", "eq2_dlnp3", "eq2_dlnEXP") # all coeffs. excluding coeffs. for the dummies
-
-coeff[relCoeffs,]
-
-coeffRelevant <- coeff[relCoeffs,]  
-
-coeffnum <- coeff[relCoeffs,1] #just extract coefficients without standard errors etc
-coeffnum 
+ 
 
 #' Easy way for Elasticities based on model with both homogeneity and symmetry imposed
 #' The coef() function will extract the coefficients from a summary table and their 
