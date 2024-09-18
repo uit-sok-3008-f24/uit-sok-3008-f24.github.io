@@ -16,7 +16,7 @@
 |||Then we will start: Rotterdam model:- Properties, derivation, elasticity formulas, restrictions <br/> [PPT on Rotterdam model](https://uit.instructure.com/courses/35407/files?preview=3175049) |
 |5|11/09|Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student_session_1.R) <br/> |
 |6|13/09|[Complete R codes for Rotterdam Model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_complete.R)|
-|7|19/09||
+|7|19/09|[R code for estimating AIDS model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Aids_complete.R)|
 |8|25/09||
 |9|26/09||
 |Deadline (16:00)|26/09|[Where to get data for term paper 1](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Where%20to%20get%20data%20for%20term%20papers%20%20(1).pdf).<br/>                                 Deadline (16:00) for hand-in of proposal for first term-paper with theme/data & name (and group members)|
