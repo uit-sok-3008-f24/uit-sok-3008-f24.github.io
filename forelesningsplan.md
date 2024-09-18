@@ -21,6 +21,8 @@
 |9|26/09||
 |Deadline (16:00)|26/09|[Where to get data for term paper 1](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Where%20to%20get%20data%20for%20term%20papers%20%20(1).pdf).<br/>                                 Deadline (16:00) for hand-in of proposal for first term-paper with theme/data & name (and group members)|
 
+|||Volatility and modeling volatility using ARCH models (Chapter - 14 from Principles of Econometrics, PP is available on Canvas), [R code]|
+
    
 
 
