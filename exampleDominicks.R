@@ -65,7 +65,7 @@ View(aggitemsUPC)
 
 # Miller lite beer cans 24 pack
 #browseURL("https://www.dlmdriveup.com/shopping/item.pl?i=3004")
-millerlite24cans <- beer %>% filter(upc==3410015306) %>% filter(move>0) %>% group_by(week) %>% 
+millerlite24cans <- beer %>% filter(upc==3410057306) %>% filter(move>0) %>% group_by(week) %>% 
   summarise(q1=sum(move), p1=mean(price, na.rm = TRUE))
 
 # Miller draft beer cans and/or bottles 24 pack
