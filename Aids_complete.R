@@ -9,7 +9,7 @@ rm(list=ls())
 
 #load packages
 library(systemfit)
-library(erer)
+library(erer) # https://cran.r-project.org/web/packages/erer/index.html
 library(dplyr)
 library(readr)
 
