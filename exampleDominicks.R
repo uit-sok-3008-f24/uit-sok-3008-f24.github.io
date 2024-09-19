@@ -61,7 +61,7 @@ aggitemsUPC <- left_join(aggitemsUPC, upcber, by = "upc")
 View(aggitemsUPC)
 
 aggitemsUPC  %>% dplyr::select(upc,aggmove, prop, descrip, size) %>% arrange(desc(prop)) %>% head(.,20)
-View(aggitemsUPC)
+
 
 # Miller lite beer cans 24 pack
 #browseURL("https://www.dlmdriveup.com/shopping/item.pl?i=3004")
