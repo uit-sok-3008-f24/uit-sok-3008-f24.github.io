@@ -17,15 +17,14 @@
 |5|11/09|Estimate Rotterdam Model [Guiding R code for Rotterdam model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_student_session_1.R) <br/> |
 |6|13/09|[Complete R codes for Rotterdam Model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Rotterdam_model_complete.R)|
 |7|19/09|[R code for estimating AIDS model](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Aids_complete.R)|
-|8|25/09|Price analysis using Vector Error Correction Model (VECM) (Chapter - 13 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_13.R).<br/>   After learning about VECM, we will do some price analysis along the fresh salmon supply chain from  the export market of Norway to the retail market of France (Read the article: [price transmission](https://www.tandfonline.com/doi/full/10.1080/13657305.2014.903309) before class). Also, check some of the articles from your reading list) <br/> <br/> [Price analysis within salmon supply chain](https://dejenegizawkidane.github.io/PT/SOK-3008_price_analysis.html)|
-||||
+|8|25/09| Estimate AIDS model|
 |Deadline (16:00)|26/09|[Where to get data for term paper 1](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Where%20to%20get%20data%20for%20term%20papers%20%20(1).pdf).<br/>                                 Deadline (16:00) for hand-in of proposal for first term-paper with theme/data & name (and group members)|
-|9|26/09||
-||||
-|10|03/10|Volatility and modeling volatility using ARCH models (Chapter - 14 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_14.R)|
-|11|||
+|9|26/09| presentation of proposal, term paper 1|
+|10|03/10|Price analysis using Vector Error Correction Model (VECM) (Chapter - 13 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_13.R).<br/>   After learning about VECM, we will do some price analysis along the fresh salmon supply chain from  the export market of Norway to the retail market of France (Read the article: [price transmission](https://www.tandfonline.com/doi/full/10.1080/13657305.2014.903309) before class). Also, check some of the articles from your reading list) <br/> <br/> [Price analysis within salmon supply chain](https://dejenegizawkidane.github.io/PT/SOK-3008_price_analysis.html)|
+|11|07/10|Volatility and modeling volatility using ARCH models (Chapter - 14 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_14.R)|
 |12|||
 |13|||
+|14|||
 
 
 
