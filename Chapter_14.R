@@ -1,3 +1,4 @@
+
 rm(list=ls())
 r <- read.table("http://www.principlesofeconometrics.com/poe4/data/dat/byd.dat")
 names(r) <- "r"
@@ -10,8 +11,9 @@ plot(density(r$r))
 #Summary of the data 
 summary(r)
 sd(r$r) 
+
 #Normality test 
-install.packages("tseries")
+#install.packages("tseries")
 library(tseries)
 jarque.bera.test(ts(r$r))
 
@@ -33,7 +35,7 @@ jarque.bera.test(ts(r$r))
 
 #First, estimate the mean equation(in this example we take, rt=b0 +et) 
 #where rt is the monthly return.
-#Second, retrieve the estimated residuals, and fitt a model for the residuals 
+#Second, retrieve the estimated residuals, and fit a model for the residuals 
 #Third, estimate (14.3) and us LM test 
 #Fourth, estimate the variance equation, if the data has an ARCH effect
 
@@ -61,6 +63,8 @@ out$df[2]*out$r.squared
 # Since  61.91036 >chisqr(0.95,1)=3.841
 # we reject the null hypothesis.
 
+out$df[2]*out$r.squared  > qchisq(0.95,1)
+
 
 #You can also Check Autocorrelation
 # We reject the null hypothesis of no autocorrelation
@@ -74,41 +78,40 @@ Box.test(r^2, type="Ljung-Box")
 #used with the order= c(0,1). 
 
 #This function can be used to estimate and plot the variance ht 
+?garch
+
 require(tseries) 
 byd.arch <- garch(ts(resid(m1),freq=1) ,c(0,1))
 summary(byd.arch)
 
-#Fitted values, volatility/variance 
-hhat <- ts(2*byd.arch$fitted.values[-1,1]^2)
+#Fitted values, volatility/variance
+head(byd.arch$fitted.values)
+hhat <- ts(byd.arch$fitted.values[-1,1]^2)
 plot.ts(hhat)
 
 
-#The GARCH model
-#Using package rugarch for GARCH models.
-
-#https://cran.r-project.org/web/views/Finance.html
-library(rugarch)
-
 #Both the mean and the variance models can be estimated 
 #simultaneously using the package "rugarch".
-# There are two steps to fit GARCH or ARCH model using rugarch pachage.
+# There are two steps to follow to fit GARCH or ARCH model using rugarch pachage.
+
+library(rugarch)
 
 # First step, specify the mean and the variance model using the function "ugarchspec"
-#Second step, fit the model using the function "ugarchfit"
-
 #ugarchspec - is method for creating a univariate GARCH specification object prior to fitting.
 ??ugarchspec
 
 garchSpec <- ugarchspec(
+  mean.model=list(armaOrder=c(0,0)),
   variance.model=list(model="sGARCH",garchOrder=c(1,0)),  # Standard GARCH model (sGARCH)
-  mean.model=list(armaOrder=c(0,0)), 
   distribution.model="std")
 
+#Second step, fit the model using the function "ugarchfit"
 #ugarchfit - method for fitting a variety of univariate GARCH models.
 #??ugarchfit
 
 garchFit <- ugarchfit(spec=garchSpec, data=rt)
 coef(garchFit)
+pint(garchFit)
 
 names(garchFit@fit) # @ call-the call of the garch function
 
@@ -121,11 +124,11 @@ hhat <- ts(garchFit@fit$sigma^2)
 plot.ts(hhat, main="Standard GARCH model (sGARCH) with dataset 'byd'")
 
 #
-#There are differnt GRACH models 
-# T-GARCH model
-#this model allows us to model asymmetric effect treating bad news and good 
+# There are different GRACH models such as:
+# T_GARCH, GARCH-in-Mean, Exponential GARCH (EGARCH) model, etc. 
+
+# T-GARCH model-  allows us to model asymmetric effect treating bad news and good 
 # news terms in the model
-#GARCH-in-Mean, Exponential GARCH (EGARCH) model, etc. 
 
 #In R, the "fGARCH model" subsumes many GARCH models. 
 
@@ -138,6 +141,7 @@ garchMod <- ugarchspec(variance.model=list(model="fGARCH",
 
 garchFit <- ugarchfit(spec=garchMod, data=rt)
 coef(garchFit)
+print(garchFit)
 
 #Fitted mean model 
 rhat <- garchFit@fit$fitted.values
