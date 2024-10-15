@@ -22,11 +22,16 @@
 |9|26/09| presentation of proposal, term paper 1|
 |10|03/10|Price analysis using Vector Error Correction Model (VECM) (Chapter - 13 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_13.R).<br/>   After learning about VECM, we will do some price analysis along the fresh salmon supply chain from  the export market of Norway to the retail market of France (Read the article: [price transmission](https://www.tandfonline.com/doi/full/10.1080/13657305.2014.903309) before class). Also, check some of the articles from your reading list) <br/> <br/> [Price analysis within salmon supply chain](https://dejenegizawkidane.github.io/PT/SOK-3008_price_analysis.html)|
 |11|07/10|Volatility and modeling volatility using ARCH models (Chapter - 14 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_14.R)|
-|12|||
-|13|||
-|14|||
-
-
-
-
-
+|12| 17/10 | Chapter 16 POE5, Qualitative and Limited Dependent Variable Models |
+|  |       | Chapter 2 & 4 Franses, Paap 2001 (in Canvas - Files) |
+|13 | 22/10       |  [R code](https://raw.githubusercontent.com/uit-sok-3008-h23/uit-sok-3008-h23.github.io/main/Chap_16_logit_probit.R){:target='_blank_'}      |
+|14| 23/10 | Chapter 15 POE5, Panel Data Models I |
+|  |       | Chapter 13 & 14 Wooldridge 5th ed., 2012 (PDFs in Canvas - Files) |
+| 15 |  31/10    |  R code for Chapter 15 and Wooldridge in Canvas - Files            |
+|16| 01/11 | Continue on  Chapter 15 POE5, Panel Data Models II |
+|19| 07/11 | Chapter 15 POE5, Panel Data Models - More on estimation, interpretation  |
+|  |      |  We will work through the following exercises from Chapter 15: 18, 22, 29 & 30. PDFs of text in Canvas - Files               |
+|  |      |  There will be a lot of details, so you are advised to have a try at these before the seminar                      |
+| 20 | 13/11 | Reproducibility |
+| Term paper 2  |      | [Where to get data and ideas for term paper 2?](https://docs.google.com/document/d/e/2PACX-1vTwM6iOGHRjRG07-WGgLUTaD2BL2pnEIb8uPdD378aEFZATSnhyd7ag8TSeRxdKC-1pTyV_p4wZ9Go-/pub){:target='_blank_'} <br /> <br /> Also, [more sources for price analysis](https://uit.instructure.com/courses/31424/files?preview=2663537){:target='_blank_'} <br /> <br />  |
+| **Deadline**   | 20/12    |  Tentative deadline for submission of term paper 2                      |
