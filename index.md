@@ -1,7 +1,7 @@
 {% include navbar.html %}  {% include top-box.html %}
 
 
-## Course paln 
+## Course plan 
 The lecture and seminar plan contain information about the timing, topics, course instructor, as well as resources/tasks for each topic.
 
 - [Lecture and Seminar Plan](forelesningsplan.md){:target="blank"}
