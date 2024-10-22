@@ -24,7 +24,7 @@
 |11|07/10|Volatility and modeling volatility using ARCH models (Chapter - 14 from Principles of Econometrics, PP is available on Canvas), [R code](https://github.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/blob/main/Chapter_14.R)|
 |12| 17/10 | Chapter 16 POE5, Qualitative and Limited Dependent Variable Models |
 |  |       | Chapter 2 & 4 Franses, Paap 2001 (in Canvas - Files) |
-|13 | 22/10       |  [R code](https://raw.githubusercontent.com/uit-sok-3008-h23/uit-sok-3008-h23.github.io/main/Chap_16_logit_probit.R){:target='_blank_'}      |
+|13 | 22/10       |  [R code](https://raw.githubusercontent.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/main/Chap_16_logit_probit.R){:target='_blank_'}      |
 |14| 23/10 | Chapter 15 POE5, Panel Data Models I |
 |  |       | Chapter 13 & 14 Wooldridge 5th ed., 2012 (PDFs in Canvas - Files) |
 | 15 |  31/10    |  R code for Chapter 15 and Wooldridge in Canvas - Files            |
