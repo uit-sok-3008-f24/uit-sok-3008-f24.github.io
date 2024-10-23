@@ -27,11 +27,11 @@
 |13 | 22/10       |  [R code](https://raw.githubusercontent.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/main/Chap_16_logit_probit.R){:target='_blank_'}      |
 |14| 23/10 | Chapter 15 POE5, Panel Data Models I |
 |  |       | Chapter 13 & 14 Wooldridge 5th ed., 2012 (PDFs in Canvas - Files) |
-| 15 |  31/10    |  R code for Chapter 15 and Wooldridge in Canvas - Files            |
-|16| 01/11 | Continue on  Chapter 15 POE5, Panel Data Models II |
-|19| 07/11 | Chapter 15 POE5, Panel Data Models - More on estimation, interpretation  |
+| 15 | 31/10 | Reproducibility |
+| 16 |  01/11    |  R code for Chapter 15 and Wooldridge in Canvas - Files            |
+|17| 07/11 This lecture will be moved | Continue on  Chapter 15 POE5, Panel Data Models II |
+|18| 13/11 | Chapter 15 POE5, Panel Data Models - More on estimation, interpretation  |
 |  |      |  We will work through the following exercises from Chapter 15: 18, 22, 29 & 30. PDFs of text in Canvas - Files               |
 |  |      |  There will be a lot of details, so you are advised to have a try at these before the seminar                      |
-| 20 | 13/11 | Reproducibility |
 | Term paper 2  |      | [Where to get data and ideas for term paper 2?](https://docs.google.com/document/d/e/2PACX-1vTwM6iOGHRjRG07-WGgLUTaD2BL2pnEIb8uPdD378aEFZATSnhyd7ag8TSeRxdKC-1pTyV_p4wZ9Go-/pub){:target='_blank_'} <br /> <br /> Also, [more sources for price analysis](https://docs.google.com/document/d/1SBK5mGEPJjhB_oSQ6AlhaKC-LUSWuHEU/edit?usp=sharing&ouid=115060477684683886320&rtpof=true&sd=true){:target='_blank_'} <br /> <br />  |
-| **Deadline**   | 20/12    |  Tentative deadline for submission of term paper 2                      |
+| **Deadline**   | 16/12    |  Tentative deadline for submission of term paper 2            |
