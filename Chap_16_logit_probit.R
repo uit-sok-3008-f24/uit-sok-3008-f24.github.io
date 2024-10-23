@@ -193,8 +193,187 @@ summary(il1)
 
 car::compareCoefs(l1,il1)
 
-# elasticity
+#' Marginal effects and elasticities
+
+# Load the car package
+library(car)
+
+# Set the specific value of dtime
+dtime_value <- 2  # Replace with your desired value of dtime
+
+# Use deltaMethod to calculate the marginal effect with standard error
+# Define the parameter names as b1 (Intercept) and b2 (coefficient of dtime)
+marginal_effect_probit <- deltaMethod(
+  object = p1,
+  g = paste("b2 * dnorm(b1 + b2 *", dtime_value, ")"),
+  parameterNames = paste("b", 1:2, sep = "")
+)
+
+# The marginal effect with standard error
+marginal_effect_probit
+
+# marginaleffects package
+slopes(p1,
+       newdata = datagrid(
+         dtime = 2))
+
+# Use deltaMethod to calculate the elasticity with standard error
+# Define the parameter names as b1 (Intercept) and b2 (coefficient of dtime)
+elasticity_probit <- 
+  deltaMethod(
+  object = p1,
+  g = paste("(b2 * dnorm(b1 + b2 *", dtime_value, ")) *", dtime_value, "/ pnorm(b1 + b2 *", dtime_value, ")"),
+  parameterNames = paste("b", 1:2, sep = ""))
+
+# The elasticity with standard error
+elasticity_probit
+
+# marginaleffects package
+slopes(p1, 
+       newdata = datagrid(
+         dtime = 2),
+       slope = "eyex")
+
+# Use deltaMethod to calculate the marginal effect with standard error for logit
+# Define the parameter names as b1 (Intercept) and b2 (coefficient of dtime)
+marginal_effect_logit <- deltaMethod(
+  object = l1,
+  g = paste("b2 * exp(b1 + b2 *", dtime_value, ") / (1 + exp(b1 + b2 *", dtime_value, "))^2"),
+  parameterNames = paste("b", 1:2, sep = "")
+)
+
+# The marginal effect with standard error
+marginal_effect_logit
+
+# marginaleffects package
+slopes(l1,
+       newdata = datagrid(
+         dtime = 2))
+
+# Use deltaMethod to calculate the elasticity with standard error for logit
+# Predicted probability P for the logit model
+P_at_dtime_logit <- paste("1 / (1 + exp(-(b1 + b2 *", dtime_value, ")))")
+
+# Define the formula for elasticity
+elasticity_logit <- deltaMethod(
+  object = l1,
+  g = paste("(b2 * exp(b1 + b2 *", dtime_value, ") / (1 + exp(b1 + b2 *", dtime_value, "))^2) *", 
+            dtime_value, "/ (", P_at_dtime_logit, ")"),
+  parameterNames = paste("b", 1:2, sep = "")
+)
+
+# The elasticity with standard error
+elasticity_logit
+
+# marginaleffects package
+slopes(l1, 
+       newdata = datagrid(
+         dtime = 2),
+       slope = "eyex")
+
+
+elasticity_probit
+
+# The elasticity of 0.295 means that for a 1% increase in travel time,
+# the probability of using an automobile increases by 0.295% relative to the current probability.
+# To calculate the new probability:
+# New Probability = Start Probability x (1 + Elasticity x Percentage Increase in dtime)
+
+# Define the function to calculate the new probability
+calculate_new_probability <- function(model, dtime_value, percentage_increase) {
+  # Calculate the linear predictor at dtime_value
+  lp_at_dtime <- coef(model)["(Intercept)"] + coef(model)["dtime"] * dtime_value
+  # Calculate the current probability (CDF of the probit model)
+  current_probability <- pnorm(lp_at_dtime)
+  # Calculate the marginal effect at dtime_value (slope of the tangent)
+  marginal_effect_at_dtime <- coef(model)["dtime"] * dnorm(lp_at_dtime)
+  # Calculate the elasticity at dtime_value
+  elasticity_at_dtime <- (marginal_effect_at_dtime * dtime_value) / current_probability
+  # Calculate the new probability after the percentage increase in dtime
+  new_probability <- current_probability * (1 + elasticity_at_dtime * (percentage_increase / 100))
+  return(new_probability)
+}
+
+# Example usage
+dtime_value <- 2        # dtime = 2 (20 minutes)
+percentage_increase <- 10  # 10% increase in travel time
+
+# Call the function for the probit model 'p1'
+new_probability <- calculate_new_probability(p1, dtime_value, percentage_increase)
+
+# Print the new probability
+new_probability
+
+# Starting point for the elasticity
+f(dtime=2)
+
+# increase in the probability for a 10% increase in travel time
+new_probability-f(dtime=2)
+
+
+# elasticity at all observations, ignore the negative sign
 avg_slopes(l1, slope = "eyex")
+
+# Note that this is a negative value, which makes the elasticity at this point negative
+mean(transport$dtime)
+
+# elasticity at all observations
+mfx <- slopes(l1)
+mean(mfx$estimate*transport$dtime/f(dtime=transport$dtime))
+
+# The marginal effect at the mean
+dydx <- slopes(l1, newdata = "mean")
+dydx$estimate
+
+# Define a function to calculate the predicted probability at a specific value of dtime e.g the mean
+f <- makeFun(l1) 
+f(dtime=mean(transport$dtime))
+
+# elasticity at mean
+dydx$estimate*mean(transport$dtime)/f(dtime=mean(transport$dtime))
+
+# Set the specific value of dtime for which we want to draw the line and tangent
+dtime_value <- 2
+
+# Define a sequence of dtime values for plotting the CDF
+dtime_seq <- seq(-10, 10, length.out = 100)
+
+# Compute the linear predictor (probit) at each value of dtime
+lp <- coef(p1)["(Intercept)"] + coef(p1)["dtime"] * dtime_seq
+
+# Compute the CDF (probit link) using pnorm
+cdf <- pnorm(lp)
+
+# Compute the linear predictor at dtime_value = 2
+lp_at_dtime <- coef(p1)["(Intercept)"] + coef(p1)["dtime"] * dtime_value
+
+# Compute the CDF at dtime_value = 2
+cdf_at_dtime <- pnorm(lp_at_dtime)
+
+# Calculate the marginal effect at dtime_value = 2 (slope of the tangent)
+marginal_effect_at_dtime <- coef(p1)["dtime"] * dnorm(lp_at_dtime)
+
+# Create a ggplot object for the CDF
+ggplot_df <- data.frame(dtime = dtime_seq, CDF = cdf)
+
+# Generate the plot
+ggplot(ggplot_df, aes(x = dtime, y = CDF)) +
+    # Plot the CDF curve
+  geom_line(size = 1.2, color = "blue") +
+    # Add a vertical line from dtime = 2 to the CDF curve
+  geom_vline(xintercept = dtime_value, linetype = "dashed", color = "red") +
+    # Add a point at the CDF value for dtime = 2
+  geom_point(aes(x = dtime_value, y = cdf_at_dtime), size = 3, color = "red") +
+    # Draw the tangent line at dtime = 2
+  geom_abline(intercept = cdf_at_dtime - marginal_effect_at_dtime * dtime_value,
+              slope = marginal_effect_at_dtime, linetype = "dotted", color = "black") +
+    # Customize labels and title
+  labs(x = "dtime", y = "Probit CDF",
+       title = "CDF of Probit Model with Tangent at dtime = 2",
+       subtitle = "Blue: CDF, Red: Vertical line, Black: Tangent line") +
+    # Customize the theme
+  theme_minimal()
+
 
 rm(list=ls())
 
