@@ -29,7 +29,7 @@
 |  |       | Chapter 13 & 14 Wooldridge 5th ed., 2012 (PDFs in Canvas - Files) |
 | 15 | 31/10 | Reproducibility, writing a paper or thesis in Quarto |
 | 16 |  01/11    |  R code for Chapter 15 and Wooldridge in Canvas - Files            |
-|17| 07/11 This lecture will be moved | Continue on  Chapter 15 POE5, Panel Data Models II |
+|17| 08/11 | Continue on  Chapter 15 POE5, Panel Data Models II |
 |18| 13/11 | Chapter 15 POE5, Panel Data Models - More on estimation, interpretation  |
 |  |      |  We will work through the following exercises from Chapter 15: 18, 22, 29 & 30. PDFs of text in Canvas - Files               |
 |  |      |  There will be a lot of details, so you are advised to have a try at these before the seminar                      |
