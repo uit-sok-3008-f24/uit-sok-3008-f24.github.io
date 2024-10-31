@@ -27,7 +27,7 @@
 |13 | 22/10       |  [R code](https://raw.githubusercontent.com/uit-sok-3008-f24/uit-sok-3008-f24.github.io/main/Chap_16_logit_probit.R){:target='_blank_'}      |
 |14| 23/10 | Chapter 15 POE5, Panel Data Models I |
 |  |       | Chapter 13 & 14 Wooldridge 5th ed., 2012 (PDFs in Canvas - Files) |
-| 15 | 31/10 | Reproducibility, writing a paper or thesis in Quarto |
+| 15 | 31/10 | Reproducibility, writing a paper or thesis in Quarto. Resources in Canvas - Files - reproducible |
 | 16 |  01/11    |  Finish lecture on Panel Models. Read the *liquor_panel_comp_models_V2.pdf* and listen to the [NotebookLM blog](https://notebooklm.google.com/notebook/a5e59935-f3c0-48f8-ba78-bcb4dd6fd630/audio) about it & R code for Chapter 15 and Wooldridge. All resources in Canvas - Files            |
 |17| 08/11 | Continue on  Chapter 15 POE5, Panel Data Models II |
 |18| 13/11 | Chapter 15 POE5, Panel Data Models - More on estimation, interpretation  |
