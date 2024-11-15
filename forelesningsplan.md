@@ -34,4 +34,4 @@
 |  |      |  We will work through the following exercises from Chapter 15: 18, 22, 29 & 30. PDFs of text in Canvas - Files               |
 |  |      |  There will be a lot of details, so you are advised to have a try at these before the seminar                      |
 | Term paper 2  |      | [Where to get data and ideas for term paper 2?](https://docs.google.com/document/d/e/2PACX-1vTwM6iOGHRjRG07-WGgLUTaD2BL2pnEIb8uPdD378aEFZATSnhyd7ag8TSeRxdKC-1pTyV_p4wZ9Go-/pub){:target='_blank_'} <br /> <br /> Also, [more sources for price analysis](https://docs.google.com/document/d/1SBK5mGEPJjhB_oSQ6AlhaKC-LUSWuHEU/edit?usp=sharing&ouid=115060477684683886320&rtpof=true&sd=true){:target='_blank_'} <br /> <br />  |
-| **Deadline**   | 16/12    |  Tentative deadline for submission of term paper 2            |
+| **Deadline**   | 16/12    |  Deadline for submission of term paper 2            |
